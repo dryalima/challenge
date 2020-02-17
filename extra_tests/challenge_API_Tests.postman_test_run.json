@@ -1,0 +1,128 @@
+{
+	"id": "9b8318d1-8a53-4301-94c7-09f671dd2e10",
+	"name": "challenge_API_Tests",
+	"timestamp": "2020-02-16T22:53:16.475Z",
+	"collection_id": "33802668-195d-44e1-9671-969786f7a4e5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "16969ee6-2fc0-4035-8167-83ecc71aa353",
+			"name": "All Users",
+			"url": "https://jsonplaceholder.typicode.com/users",
+			"time": 133,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"All users must have a name, username and email": true,
+				"Their Email must be valid": true,
+				"Their Company catchphrase must have less than 50 characters": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All users must have a name, username and email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Their Email must be valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Their Company catchphrase must have less than 50 characters": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				133
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"All users must have a name, username and email": true,
+					"Their Email must be valid": true,
+					"Their Company catchphrase must have less than 50 characters": true
+				}
+			]
+		},
+		{
+			"id": "75e406e3-e10f-4bd2-a455-072d44b0272b",
+			"name": "New Post",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 711,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				711
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "6953743a-4645-4ce0-883c-c590ebf9975a",
+			"name": "New Post without Title",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 489,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is error": false
+			},
+			"testPassFailCounts": {
+				"Status code is error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				489
+			],
+			"allTests": [
+				{
+					"Status code is error": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"collection": {
+		"requests": [
+			{
+				"id": "16969ee6-2fc0-4035-8167-83ecc71aa353",
+				"method": "GET"
+			},
+			{
+				"id": "75e406e3-e10f-4bd2-a455-072d44b0272b",
+				"method": "POST"
+			},
+			{
+				"id": "6953743a-4645-4ce0-883c-c590ebf9975a",
+				"method": "POST"
+			}
+		]
+	}
+}
